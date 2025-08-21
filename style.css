@@ -1,0 +1,89 @@
+/* 這裡放 CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffefedf;
+      color: #333;
+    }
+
+    header {
+      background: #021c1f97;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+ header h1 {
+  position: absolute;   /* 讓元素脫離文流，固定在 header */
+  top: 0;
+  left: 0;              /* ✅ 貼齊左邊 */
+  width: 300px;          /* 建議設定寬度 */
+  height: 65px;         /* 建議設定高度 */
+  
+  background-image: url(img/hazelnut_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-indent: -9999px; /* 隱藏文字 */
+  line-height: 80px;    /* 讓高度一致 */
+}
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /*both*/
+    .both{
+      display:flex;
+    }
+    .both img {
+      left: 0;
+      max-width: 50%;
+      height: auto;
+    }
+    .info{
+      width:50%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .info a {
+      color: #021c1f97;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #9e7005;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #130d01;
+    }
