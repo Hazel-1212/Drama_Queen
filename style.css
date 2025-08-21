@@ -92,6 +92,7 @@
       font-weight: bold;
       margin-top: 10px;
     }
+
 .drift {
   width: 30%;                  /* 內容區塊寬度 */
   margin: 20px auto;           /* ✅ 自動左右置中 */
@@ -112,6 +113,28 @@
 .drift a:hover {
   color: #0077cc;              /* ✅ 滑鼠移上去有變色 */
   border-radius: 54px; 
+}
+
+/*文章標題 → class="title"
+
+作者名字 → class="author"
+
+整個文章區塊 → class="result"*/
+.title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #021c1f97;
+}
+.author{
+  font-size: 1rem;
+  color: #555;
+}
+.result{
+  background:#fff; 
+  padding:15px; 
+  margin-bottom:12px; 
+  border-radius:8px; 
+  box-shadow:0 2px 5px rgba(0,0,0,0.1); 
 }
 
     footer {

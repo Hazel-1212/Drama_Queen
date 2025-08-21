@@ -1,14 +1,5 @@
 [
-  {
-    "title": "關於榛果",
-    "url": "/Hazelnut/about.html"
-  },
-  {
-    "title": "期末專題 - 自走小車",
-    "url": "/Hazelnut/projects/car.html"
-  },
-  {
-    "title": "校園隨筆 - 閱人咖啡館",
-    "url": "/Hazelnut/ramble/cafe.html"
-  }
+  { "title": "如何學習JavaScript", "author": "JX C", "url": "/article/1" },
+  { "title": "Python入門教學", "author": "Alice", "url": "/article/2" },
+  { "title": "FPGA專案分享", "author": "Bob", "url": "/article/3" }
 ]
