@@ -53,11 +53,24 @@
       justify-content: center; /* 水平置中 */
       align-items: center;     /* 垂直置中 */
   }
-    /*both*/
-    .both{
-      display:flex;
-      justify-content: center; /* 水平置中 */
-      align-items: center;     /* 垂直置中 */
+  .content{
+    padding: 20px;
+    text-align: left;
+  }
+  .content h1 {
+    color: rgb(16, 82, 45);
+    margin-bottom: 20px;
+  }
+  .content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  /*both*/
+  .both{
+    display:flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
        gap: 20px; /* 圖片和文字的距離 */
        margin-bottom: 20px; /* 每個 section 底下加空隙 */
     }
