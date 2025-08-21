@@ -56,6 +56,8 @@
     /*both*/
     .both{
       display:flex;
+      width:50%;
+      flex-direction: column;
       justify-content: center; /* 水平置中 */
       align-items: center;     /* 垂直置中 */
        gap: 20px; /* 圖片和文字的距離 */
@@ -72,7 +74,7 @@
 }
 
 .both ul {
-  text-align: left; /* ✅ 確保標題和文字都是靠左 */
+  text-align: center; /* ✅ 確保標題和文字都是置中 */
 }
     .info{
       width:50%;
@@ -120,6 +122,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  text-align: left;
 }
 .articles a{
   text-decoration: none;
@@ -129,13 +132,22 @@
   color: #0077cc;
 }
 .title{
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #021c1f97;
+  text-align: center;
 }
+
 .author{
   font-size: 1rem;
   color: #555;
+  width: 5%;                  /* 內容區塊寬度 */
+  margin: 10px auto;           /* ✅ 自動左右置中 */
+  padding: 10px;
+  border: 2px solid #00080997;      /* ✅ 外框 */
+  border-radius: 12px;         /* ✅ 圓角 */
+  background-color: #e4eff197;   /* ✅ 背景色 */
+  text-align: center;
 }
 .result{
   background:#fff; 
@@ -144,7 +156,42 @@
   border-radius:8px; 
   box-shadow:0 2px 5px rgba(0,0,0,0.1); 
 }
+.result h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000b0c97;
+  text-align: left;
+}
+.result h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #021c1f97;
+  text-align: left;
+}
+.result h3{
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: #06677297;
+  text-align: left;
+}
+.result p{
+  margin: 10px 0;
+  text-align: left;
+}
+.result a{
+  color: #021c1f97;
+  text-decoration: none;
+  font-weight: bold;
+   text-align: left;
+}
+.result li{
+  color: #021c1f97;
+  text-decoration: none;
+  font-weight: bold;
+   text-align: left;
+}
 
+/*copyright*/
     footer {
       background: #9e7005;
       padding: 20px;
