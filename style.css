@@ -29,13 +29,7 @@
   text-indent: -9999px; /* 隱藏文字 */
   line-height: 80px;    /* 讓高度一致 */
 }
-h2 {
-              /* ✅ 貼齊左邊 */
-  color: rgb(16, 82, 45);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -66,12 +60,24 @@ h2 {
     /*both*/
     .both{
       display:flex;
+       gap: 20px; /* 圖片和文字的距離 */
+       margin-bottom: 40px; /* 每個 section 底下加空隙 */
     }
     .both img {
       left: 0;
       max-width: 50%;
       height: auto;
     }
+    .both h2 {
+  text-align: right;
+  color: rgb(16, 82, 45);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.both ul {
+  text-align: left; /* ✅ 確保標題和文字都是靠左 */
+}
     .info{
       width:50%;
       display:flex;
@@ -86,6 +92,27 @@ h2 {
       font-weight: bold;
       margin-top: 10px;
     }
+.drift {
+  width: 30%;                  /* 內容區塊寬度 */
+  margin: 20px auto;           /* ✅ 自動左右置中 */
+  padding: 20px;
+  border: 2px solid #00080997;      /* ✅ 外框 */
+  border-radius: 12px;         /* ✅ 圓角 */
+  background-color: #021c1f97;   /* ✅ 背景色 */
+  text-align: center;          /* ✅ 文字置中 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ✅ 陰影讓它更立體 */
+}
+
+.drift a {
+  color: #f7f8f8;             /* ✅ 字體顏色深一點 */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.drift a:hover {
+  color: #0077cc;              /* ✅ 滑鼠移上去有變色 */
+  border-radius: 54px; 
+}
 
     footer {
       background: #9e7005;
