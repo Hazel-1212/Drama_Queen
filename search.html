@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>站內搜尋</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 30px; background:#fafafa; }
+  .search-box { max-width: 600px; margin: auto; }
+  .search-input { width: 100%; padding: 12px; font-size: 16px; border:1px solid #ccc; border-radius: 8px; }
+  .results { margin-top: 20px; }
+  .result { background:#fff; padding:15px; margin-bottom:12px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+  .result a { font-size:18px; text-decoration:none; color:#0077cc; }
+  .result a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="search-box">
+  <h1>🔍 搜尋文章</h1>
+  <input id="search" class="search-input" type="text" placeholder="輸入文章名稱...">
+  <div id="results" class="results"></div>
+</div>
+
+<script>
+(async function(){
+  const res = await fetch('/json/search.json'); // 載入文章清單
+  const data = await res.json();
+
+  const input = document.getElementById('search');
+  const results = document.getElementById('results');
+
+  function search(q){
+    const kw = q.trim().toLowerCase();
+    if(!kw){ results.innerHTML = ""; return; }
+    const hits = data.filter(item => item.title.toLowerCase().includes(kw));
+    results.innerHTML = hits.length
+      ? hits.map(h => `<div class="result"><a href="${h.url}">${h.title}</a></div>`).join("")
+      : "<p>❌ 找不到符合的文章</p>";
+  }
+
+  input.addEventListener('input', e => search(e.target.value));
+})();
+</script>
+</body>
+</html>
