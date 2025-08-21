@@ -29,6 +29,15 @@
   text-indent: -9999px; /* 隱藏文字 */
   line-height: 80px;    /* 讓高度一致 */
 }
+ header h2 {
+  position: absolute;   /* 讓元素脫離文流，固定在 header */
+  top: 0;
+  left: 0;              /* ✅ 貼齊左邊 */
+  color: rgb(10, 62, 33);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
     nav ul {
       list-style: none;
       padding: 0;
