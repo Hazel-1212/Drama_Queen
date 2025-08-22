@@ -133,6 +133,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  text-align: left;
+  justify-content: flex-start;
 }
 .articles a{
   text-decoration: none;
@@ -145,6 +147,8 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #021c1f97;
+  text-align: center;
+  justify-content: flex-start;
 }
 .author{
   font-size: 1rem;

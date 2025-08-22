@@ -175,8 +175,12 @@
   text-align: left;
 }
 .result p{
+  font-size: 1rem;
+  color: #000708;
   margin: 10px 0;
   text-align: left;
+  text-decoration: none;
+  font-weight: normal;
 }
 .result a{
   color: #021c1f97;
@@ -185,11 +189,13 @@
    text-align: left;
 }
 .result li{
-  color: #021c1f97;
+  font-size: 1.0rem;
+  color: #06677297;
   text-decoration: none;
   font-weight: bold;
    text-align: left;
 }
+
 
 /*copyright*/
     footer {
