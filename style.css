@@ -16,7 +16,7 @@
 h1{
   font-size: 2rem;
     color: rgb(16, 82, 45);
-  text-align: left;
+  text-align: center;
 }
 
 h2{
@@ -134,25 +134,25 @@ p{
   font-weight: bold;
 }
 
-.author {
+.actor {
   display: flex;
   align-items: center;   /* 垂直置中 */
-  justify-content: left; /* 水平置中 */
+  justify-content: center; /* 水平置中 */
   margin-bottom: 10px;
 }
 
-.author .icon {
+.actor .icon {
   width: auto;  /* 控制圖片大小 */
   height: 45px
 }
 
-.author .text {
-  font-size: 1rem;
+.actor .text {
+  font-size: 1.2rem;
   color: #555;
-  height: 45px;                  /* 內容區塊高度 */
+  height: auto;                  /* 內容區塊高度 */
   padding: 10px;
   border: 2px solid #00080997;      /* ✅ 外框 */
-  
+  border-radius: 8px;               /* ✅ 圓角 */
   background-color: #e4eff197;   /* ✅ 背景色 */
   text-align: center;
   margin-left: 0; /* 不留空隙 */
